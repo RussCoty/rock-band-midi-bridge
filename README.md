@@ -82,6 +82,16 @@ swift build -c release
 
 `package.sh` builds both architectures, creates the icon/app, ad-hoc signs by default, and writes a ZIP plus SHA-256 checksum under `dist/`. For Developer ID signing, set `SIGN_IDENTITY` to your own signing identity. Signing does not notarize the app. No third-party Swift dependencies are required.
 
+### Notarizing a signed build
+
+With valid Apple notarization credentials saved as a Keychain profile:
+
+```sh
+./scripts/notarize.sh YOUR_KEYCHAIN_PROFILE
+```
+
+The script submits the signed app archive to Apple, requires an `Accepted` result, staples and validates the ticket, checks Gatekeeper, and repackages the download with a new checksum. It does not upload to GitHub automatically. Apple may require the developer account holder to accept current agreements before submission. The current public 1.2.0 download remains **signed but not notarized** until a successful submission is published.
+
 ## Protocol references
 
 This Swift decoder was implemented from the documented report format and checked against captured 27-byte macOS HID reports.
