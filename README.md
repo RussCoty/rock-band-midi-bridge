@@ -4,7 +4,7 @@
 
 A small native Mac app that reads the keyboard's USB receiver and sends notes, velocity and expression to your DAW or software synth. No replacement USB driver, AAX wrapper or subscription needed. The app sends MIDI; it does not make sound itself.
 
-**[Download the Mac app](https://github.com/RussCoty/rock-band-midi-bridge/releases/latest)** · **[Report a problem](https://github.com/RussCoty/rock-band-midi-bridge/issues)**
+**[Download the Mac app — ZIP](https://github.com/RussCoty/rock-band-midi-bridge/releases/download/v1.2.0/Rock-Band-MIDI-Bridge-1.2.0-macOS-universal.zip)** · [Release notes](https://github.com/RussCoty/rock-band-midi-bridge/releases/latest) · **[Report a problem](https://github.com/RussCoty/rock-band-midi-bridge/issues)**
 
 ## Compatibility
 
