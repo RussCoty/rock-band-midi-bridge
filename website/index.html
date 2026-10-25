@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rock Band MIDI Bridge for Mac | RuCo</title><meta name="description" content="Free Apple-notarized Mac MIDI bridge for the Harmonix Rock Band 3 Wii wireless keyboard. Download for Apple Silicon and Intel, with Pro Tools setup instructions."><link rel="icon" href="assets/app-icon.png"><meta name="theme-color" content="#10171e"><style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#10171e;color:#e9f0f3;font:17px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:920px;margin:auto;padding:72px 28px 64px}h1{font-size:clamp(44px,7vw,76px);line-height:1.04;letter-spacing:-.05em;margin:24px 0}h2{font-size:27px;line-height:1.2;margin:54px 0 18px;letter-spacing:-.02em;border-top:1px solid #30404b;padding-top:28px}p,li{max-width:760px}p{color:#bfcdd4}a{color:#68e3c5;text-underline-offset:4px}a:hover{color:white}a:focus-visible{outline:3px solid #fff;outline-offset:5px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;color:#68e3c5}.icon{border-radius:24px;margin-top:20px}.download{display:inline-block;background:#68e3c5;color:#0d2020;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:750;margin:10px 6px 10px 0}.download:hover{background:#a2f0dc;color:#0d2020}li{padding-left:6px;margin:9px 0}strong{color:#fff}footer{max-width:920px;margin:auto;padding:0 28px 40px;color:#879ba6;font-size:13px}@media(max-width:600px){main{padding-top:36px}body{font-size:16px}.download{display:block;text-align:center;margin-right:0}h2{font-size:24px}}</style></head><body><main><p class="eyebrow">RuCo · Free music tools</p><img class="icon" src="assets/app-icon.png" width="96" height="96" alt="Rock Band MIDI Bridge app icon"><h1>Rock Band<br>MIDI Bridge</h1>
+<p>Give your Rock Band keyboard a new life as a wireless MIDI controller.</p>
+<p>A free, native Mac app that connects the Harmonix Rock Band 3 Wii wireless keyboard to Pro Tools and other CoreMIDI music apps. Play your software synths with real key velocity, touch-strip control and selectable MIDI routing.</p>
+<p><a class="download" href="https://github.com/RussCoty/rock-band-midi-bridge/releases/download/v1.2.0/Rock-Band-MIDI-Bridge-1.2.0-macOS-universal.zip">Download for Mac — v1.2.0</a> · <a href="https://github.com/RussCoty/rock-band-midi-bridge">Source code and setup guide</a></p>
+<p>Free and open source · Apple notarized · macOS 13+ · Apple Silicon and Intel</p>
+<h2>Check your controller</h2>
+<p>This release supports the <strong>Harmonix Rock Band 3 Wii wireless keyboard, item 96161</strong>, with its matching Wii USB receiver (vendor 1BAD, product 3330). Xbox and PlayStation receivers are not supported. The app sends MIDI; load a software instrument in your music app to hear sound.</p>
+<h2>From game controller to music controller</h2>
+<ul>
+<li>All 25 keys with velocity-sensitive MIDI notes.</li>
+<li>Choose MIDI channel, octave and output destination.</li>
+<li>Use the touch strip for modulation, filter cutoff or expression.</li>
+<li>Includes overdrive pitch-bend and digital sustain-pedal mappings.</li>
+<li>Send to an existing CoreMIDI destination or use the built-in virtual MIDI source.</li>
+<li>Release-all-notes control and menu-bar access.</li>
+</ul>
+<h2>Get playing</h2>
+<ol>
+<li>Download and unzip the app, then move Rock Band MIDI Bridge to Applications.</li>
+<li>Open it, connect the matching USB receiver, and power on and pair your keyboard.</li>
+<li>Select a MIDI output. In your DAW, enable that input, load a synth and enable monitoring or record-arm the track.</li>
+</ol>
+<p>The app is Developer ID signed and Apple notarized, with the ticket attached. Open it normally; no Gatekeeper override is required. macOS may show its standard first-open confirmation for an internet download.</p>
+<h2>Using Pro Tools</h2>
+<p>In Audio MIDI Setup, show MIDI Studio, open IAC Driver, enable Device is online, and add a bus called Rock Band. In the bridge, refresh outputs and choose IAC Driver Rock Band. Enable that input in Pro Tools under Setup → MIDI → MIDI Input Devices, then select it on an instrument track and record-enable the track.</p>
+<p><a href="https://github.com/RussCoty/rock-band-midi-bridge#quick-start">Read the full setup and troubleshooting guide</a></p>
+<h2>Compatibility and testing</h2>
+<p>Requires macOS 13 Ventura or later. One universal app includes Apple Silicon and Intel support. Live keyboard notes, chords, velocity and touch-strip MIDI were checked on Apple Silicon, including IAC routing. Intel is cross-built and has not been run on Intel hardware. Pedal hardware and overdrive pitch mode have not yet been physically verified. The receiver reports up to five velocities; larger chords use a safe fallback. Analog expression pedals are not supported.</p>
+<h2>Open source, with thanks</h2>
+<p>MIT licensed. Thanks to <a href="https://github.com/TheNathannator/PlasticBand">PlasticBand</a> for the report-layout documentation, and <a href="https://jasonharley2o.com/projects/rb/rb3keyboard/index.html">Jason Harley’s earlier Windows USB-to-MIDI project</a> for its reference material.</p>
+<p><a href="https://github.com/RussCoty/rock-band-midi-bridge/issues">Report a problem on GitHub</a></p>
+<p>Independent community software. Not affiliated with or endorsed by Harmonix, Nintendo, Avid or Apple. Product names belong to their respective owners.</p>
+</main><footer>RuCo · Rock Band MIDI Bridge · Version 1.2.0</footer></body></html>
