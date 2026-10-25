@@ -8,7 +8,8 @@ APP="dist/Rock Band MIDI Bridge.app"
 ZIP="dist/Rock-Band-MIDI-Bridge-1.2.0-macOS-universal.zip"
 codesign --verify --deep --strict "$APP"
 # Confirm this is a Developer ID signed app before uploading.
-if ! codesign -dvv "$APP" 2>&1 | grep -q 'Authority=Developer ID Application:'; then
+SIGNATURE_INFO="$(codesign -dvv "$APP" 2>&1)"
+if [[ "$SIGNATURE_INFO" != *"Authority=Developer ID Application:"* ]]; then
     echo 'Build with SIGN_IDENTITY set to a Developer ID Application identity first.' >&2
     exit 1
 fi
