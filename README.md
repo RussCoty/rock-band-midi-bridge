@@ -20,7 +20,7 @@ A small native Mac app that reads the keyboard's USB receiver and sends notes, v
 2. Drag **Rock Band MIDI Bridge.app** to Applications, then open it.
 3. Plug in the receiver, power on and pair the keyboard. Look for **Receiver connected** and increasing report/note counters.
 
-The release is Developer ID signed but **not Apple notarized**. macOS may require opening it through **System Settings → Privacy & Security → Open Anyway** after the first launch attempt. Only approve an app obtained from this repository. Do not disable Gatekeeper globally. If organizational policy requires notarization, build from source instead or ask your administrator.
+The release is **Developer ID signed and Apple notarized**, with the notarization ticket stapled to the app. Download, unzip, move it to Applications and open normally. macOS may show its standard first-open confirmation for an app downloaded from the internet; no Gatekeeper override is required. Organization-managed Macs may apply additional policies.
 
 ## Quick start
 
@@ -90,7 +90,7 @@ With valid Apple notarization credentials saved as a Keychain profile:
 ./scripts/notarize.sh YOUR_KEYCHAIN_PROFILE
 ```
 
-The script submits the signed app archive to Apple, requires an `Accepted` result, staples and validates the ticket, checks Gatekeeper, and repackages the download with a new checksum. It does not upload to GitHub automatically. Apple may require the developer account holder to accept current agreements before submission. The current public 1.2.0 download remains **signed but not notarized** until a successful submission is published.
+The script submits the signed app archive to Apple, requires an `Accepted` result, staples and validates the ticket, checks Gatekeeper, and repackages the download with a new checksum. It does not upload to GitHub automatically. Apple may require the developer account holder to accept current agreements before submission. The public 1.2.0 download is signed and notarized; Gatekeeper assessment reports `source=Notarized Developer ID`.
 
 ## Protocol references
 

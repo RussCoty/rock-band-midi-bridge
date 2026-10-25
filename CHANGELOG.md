@@ -2,6 +2,8 @@
 
 ## 1.2.0 — first public release
 
+The download was updated on 25 October 2026 with Apple notarization and a stapled ticket. The app code/version is unchanged.
+
 - Native macOS app with a clearer connection display, readable controls, setup guide and keyboard icon.
 - Universal Apple Silicon / Intel app bundle for macOS 13 and later.
 - Wii Rock Band 3 keyboard HID decoding: 25 keys, velocity, touch CCs, pitch bend and digital sustain.
